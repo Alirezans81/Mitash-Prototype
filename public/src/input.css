@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: dirooz;
+  src: url('./fonts/Dirooz.ttf');
+}
+
+@font-face {
+  font-family: narm;
+  src: url('./fonts/Far_Narm.ttf');
+}
+
+@font-face {
+  font-family: tawfigh;
+  src: url('./fonts/Far_TawfigO.ttf');
+}
+
+@font-face {
+  font-family: ziba;
+  src: url('./fonts/Ziba_0.ttf');
+}
+
+* {
+  font-family: 'dirooz';
+}
+
+.cont {
+  background: linear-gradient(40deg, rgba(115,100,227,1) 50%, rgba(70,48,182,1) 50%);
+}
+
+.form-cont {
+  background: linear-gradient(75deg, rgba(115,100,227,1) 50%, rgba(70,48,182,1) 0%);
+}
+
+.bg-glass {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.bg-indigo-glass {
+  background: rgba(29, 5, 101, 0.4);
+}
+
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    top: -470px;
+    right: 0px;
+    transition: all;
+    transition-duration: 0.5s;
+  }
+  #navbar:hover {
+    top: -10px;
+  }
+
+  #navbar:hover #form-link {
+    margin-bottom: 10px;
+  }
+
+
+  #navbar:hover #dropdown-icon {
+    transform: rotate(180deg);
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f9f6ff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(17, 14, 51, 0.882);
+  border-radius: 100px;
+}
+
+.text-dark {
+  color: rgba(17, 14, 51, 0.882) !important;
+}
+
+.bg-dark {
+  background-color: rgba(17, 14, 51, 0.882) !important;
+}
+
+.icon-circle-sm {
+  font-size: 7px;
+}

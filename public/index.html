@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>میتاش | زیبایی ات را پیدا کن</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link href="./src/input.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6656344507.js" crossorigin="anonymous"></script>
+</head>
+<body class="overflow-x-hidden h-full w-screen">
+  <div class="cont w-screen min-h-screen flex flex-col items-center py-8 md:px-16 px-5">
+    <!-- navbar -->
+    <header id="navbar" class="navbar w-full bg-white flex justify-between px-6 pt-5 pb-2 md:py-5 rounded-2xl shadow-lg shadow-slate-900 z-10 fixed md:static flex-col md:flex-row">
+      <div class="section-buttons flex justify-center items-center flex-col md:flex-row">
+        <div class="logo">
+          <a href="./index.html">
+            <h1 class="text-dark text-3xl mt-5 md:mt-0 mb-5 md:mb-0">مـیـتـاــــش</h1>
+          </a>
+        </div>
+        <a href="#introducing" class="w-1/2 md:w-20 text-center mx-3 my-5 md:my-0 transition-all duration-100 py-1 text-gray-400 hover:text-indigo-700 border-b-2 border-white hover:border-indigo-100">معرفی برنامه</a>
+        <a href="#features" class="w-1/2 md:w-20 text-center mx-3 my-5 md:my-0 transition-all duration-100 py-1 text-gray-400 hover:text-indigo-700 border-b-2 border-white hover:border-indigo-100">ویژگی ها</a>
+        <a href="#our-team" class="w-1/2 md:w-20 text-center mx-3 my-5 md:my-0 transition-all duration-100 py-1 text-gray-400 hover:text-indigo-700 border-b-2 border-white hover:border-indigo-100">تیم ما</a>
+        <a href="#contact-us" class="w-1/2 md:w-20 text-center mx-3 my-5 md:my-0 transition-all duration-100 py-1 text-gray-400 hover:text-indigo-700 border-b-2 border-white hover:border-indigo-100">تماس با ما</a>
+      </div>
+      <a id="form-link" href="./src/form.html" class="mb-5 md:mb-0 w-36 mx-auto md:mx-0 mt-5 md:mt-0 md:w-fit py-2 flex flex-col justify-center border-2 border-indigo-700 rounded-lg text-indigo-700 px-6 md:py-0 transition-all duration-300 hover:text-white hover:bg-indigo-700">
+        <span class="h-fit text-center">ثبت فرم</span>
+      </a>
+      <div class="md:hidden flex justify-center items-center mt-2">
+        <i id="dropdown-icon" class="fa fa-arrow-down text-3xl transition-all duration-1000" aria-hidden="true"></i>
+      </div>
+    </header>
+    <!-- end of navbar -->
+
+    <!-- introducing app -->
+    <section id="introducing" class="w-full my-10 rounded-2xl py-10 lg:py-14 px-12 bg-white">
+      <div class="w-full lg:grid lg:grid-cols-12 grid-rows-2 lg:grid-rows-1 overflow-hidden">
+        <div class="row-span-1 col-span-12 lg:col-span-6 mb-12 lg:mb-0 flex flex-col justify-between md:pl-10 h-full">
+          <h1 class="text-2xl text-center md:text-right md:text-2xl xl:text-3xl font-bold text-indigo-700">رزرو آرایشگاه ها و سالن های زیبایی</h1>
+          <span class="text-dark text-base xl:text-lg my-4">ما در حال ساخت اپلیکشینی هستیم تا توی وقت و هزینه ات برای رزرو وقت آرایشگاه ها و سالن های زیبایی صرفه جویی کنی.</span>
+          <span class="text-gray-500 text-xs lg:text-sm xl:text-base px-0 sm:px-5 md:px-8 my-2"><i class="fa fa-circle icon-circle-sm ml-2 mr-1" aria-hidden="true"></i>شده تایم زیادی صرف تبلیغ خودت تو پلتفرمی میکنی ولی محدودیت هایی مدام دست و پاگیرت میشه ؟ دیگه نگران این موضوع نباش فقط کافیه برنامه میتاش رو به هر اپلیکیشنی که دوست داری لینک کنی و کار خودت رو مدرن و بدون محدودیت دنبال کنی.</span>
+          <span class="text-gray-500 text-xs lg:text-sm xl:text-base px-0 sm:px-5 md:px-8 my-2"><i class="fa fa-circle icon-circle-sm ml-1 mr-1" aria-hidden="true"></i> خیلی وقت ها مشتری رزرو میکنه ولی سرتایم رزرو شده نمیاد ، یا میخوای بری رزرو کنی ولی از کیفیت آرایشگاه اطمینان نداری ...</span>
+          <span class="text-gray-500 text-xs lg:text-sm xl:text-base px-0 sm:px-5 md:px-8 my-2"><i class="fa fa-circle icon-circle-sm ml-2 mr-1" aria-hidden="true"></i>میتاش پلتفرمی آرایشی و بهداشتیه که از رزرو بگیر تا خرید محصولات و مشاوره پوست و مو و ... همه این موارد با روش جدید و مدرن میتاش امکان پذیره.</span>
+          <span class="text-dark text-base xl:text-lg mt-4">شما لایق بهترینها هستید و میتاش تمام قد از شما عزیزان حمایت میکنه :)</span>
+        </div>
+        <div class="flex flex-col items-center row-span-1 col-span-12 lg:col-span-6 mx-auto my-aut">
+          <img class="demo-img  rounded-2xl o" src="./src/assets/demo.jpg" alt="">
+          <a href="" class="mt-5 text-blue-300 hover:text-blue-600 transition-all duration-150 font-bold">مشاهده عکس های برنامه</a>
+        </div>
+      </div>
+    </section>
+    <!-- end of introducing app -->
+
+    <!-- features -->
+    <h2 id="features" class="text-white text-2xl sm:text-3xl mb-10 mt-10">قابلیت های در حال توسعه</h2>
+    <section class="grid grid-cols-12 grid-rows-4 sm:grid-rows-2 lg:grid-rows-1 gap-8 px-0 sm:px-16 overflow-hidden w-full">
+      <div class="col-span-12 sm:col-span-6 row-span-1 lg:col-span-3 bg-white rounded-2xl w-full flex flex-col justify-between align-middle py-10">
+        <div class="flex flex-col justify-center">
+          <img class="h-20 w-20 bg-cover mx-auto mb-5" src="./src/assets/shop.png" alt="">
+          <span class="text-center text-xl font-bold text-dark">فروشگاه محصولات</span>
+        </div>
+        <span class="text-sm sm:text-base text-gray-500 text-center mt-7 px-6 my-auto">با همکاری شرکت های سطح عالی کشور محصولاتی رو برای کاربران خودمون فراهم کردیم که نیازی نباشه نگران کیفیت و ضمانت و ... کالایی که خرید میکنین باشین و میتاش پیشنهاد های ویژه ایی برای این بخش طراحی کرده.</span>
+      </div>
+      <div class="col-span-12 sm:col-span-6 row-span-1 lg:col-span-3 bg-white rounded-2xl w-full flex flex-col justify-between align-middle py-10">
+        <div class="flex flex-col justify-center">
+          <img class="h-20 w-20 bg-cover mx-auto mb-5" src="./src/assets/vitrine.png" alt="">
+          <span class="text-center text-xl font-bold text-dark">ویترین مجازی</span>
+        </div>
+        <span class="text-sm sm:text-base text-gray-500 text-center mt-7 px-6 my-auto">تاحالا شده بخوای محصولات خودتو بفروشی ولی بستر خوبی براش پیدا نکنی و امنیت خرید و فروش رو برات تضمین نکنه؟ میتاش این مشکل رو رفع کرده کافیه از محصولات خودت عکس بگیری و تو ویترین پنل خودت بچینی و بفروش برسونی .</span>
+      </div>
+      <div class="col-span-12 sm:col-span-6 row-span-1 lg:col-span-3 bg-white rounded-2xl w-full flex flex-col justify-between align-middle py-10">
+        <div class="flex flex-col justify-center">
+          <img class="h-20 w-20 bg-cover mx-auto mb-5" src="./src/assets/play.png" alt="">
+          <span class="text-center text-xl font-bold text-dark">موزیک پلیر</span>
+        </div>
+        <span class="text-sm sm:text-base text-gray-500 text-center mt-7 px-6 my-auto">قسمت هیجان انگیزی که میتونی برای خودت رقم بزنی ... پلی لیست آهنگ بروز هفته و آهنگ های محبوب فقط و فقط با مشخص کردن اینکه به کدوم سبک آهنگ و خواننده علاقه داری متناسب با اون تو لیست آهنگی برات چیده میشه و موقع آرایش دغدغه موسیقی رو دیگه نداری .</span>
+      </div>
+      <div class="col-span-12 sm:col-span-6 row-span-1 lg:col-span-3 bg-white rounded-2xl w-full flex flex-col justify-between align-middle py-10">
+        <div class="flex flex-col justify-center">
+          <img class="h-20 w-20 bg-cover mx-auto mb-5" src="./src/assets/hair.png" alt="">
+          <span class="text-center text-xl font-bold text-dark">مشاور پوست و مو</span>
+        </div>
+        <span class="text-sm sm:text-base text-gray-500 text-center mt-7 px-6 my-auto">کاربران میتونند رایگان با مشاور پوست و مو در ارتباط باشند و مشکلاتی خودشون رو رفع کنند ، با اینکار دیگه از خرید محصولاتی که متناسب با خودشون هست اطمینان کسب کنند و از تبلیغات های زرد و کلیشه ایی فاصله بگیرند.</span>
+      </div>
+    </section>
+    <!-- end of features -->
+
+    <footer id="footer" class="w-screen mt-16">
+      <!-- our team -->
+      <h2 id="our-team" class="text-white text-2xl sm:text-3xl mb-10 lg:mb-0 mt-10 text-center bg-indigo-glass w-9/12 sm:w-fit mx-auto px-6 py-2 rounded-full">توسعه دهندگان برنامه</h2>
+      <section class="flex flex-col sm:flex-row justify-evenly w-full">
+        <div class="flex flex-col justify-between mx-2">
+          <img class="bg-black rounded-full h-56 w-56 mx-auto shadow-md shadow-slate-900" src="./src/assets/alireza.jpg" alt="">
+          <span class="text-center text-white mb-4 mt-8 text-2xl font-extrabold">علیرضا نصیری</span>
+          <span class="text-center text-white font-light">دانشجوی رشته علوم کامپیوتر</span>
+          <span class="text-center text-white font-light">طراح سایت و اپلیکیشن</span>
+        </div>
+        <div class="flex flex-col justify-between mx-2 mt-16 sm:mt-0">
+          <img class="bg-black rounded-full h-56 w-56 mx-auto shadow-md shadow-slate-900" src="./src/assets/mehdi.jpg" alt="">
+          <span class="text-center text-white mb-4 mt-8 text-2xl font-extrabold">مهدی شهابی</span>
+          <span class="text-center text-white font-light">دانشجوی رشته مهندسی کامپیوتر</span>
+          <span class="text-center text-white font-light">طراح UI/UX</span>
+        </div>
+      </section>
+      <!-- end of our team -->
+
+      <!-- contact us -->
+      <section id="contact-us" class="bg-white w-full mt-16 px-12 py-10 sm:grid grid-cols-12 grid-rows-2 shadow-xl flex flex-col">
+        <div class="col-span-12 lg:col-span-6 row-span-1 lg:row-span-2 flex flex-col h-fit">
+          <div class="flex flex-col md:flex-row justify-evenly py-6 border-b border-gray-300">
+            <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row justify-center align-middle">
+              <span class="text-dark">ایمیل: </span>
+              <span class="text-indigo-700 sm:mr-1 lg:mr-0 xl:mr-1">mitash@gmail.com</span>
+            </div>
+            <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row justify-center align-middle mt-5 sm:mt-0">
+              <span class="text-dark">شماره تماس ها: </span>
+              <span>
+                <span class="text-indigo-700 sm:mr-1 lg:mr-0 xl:mr-1 ml-1">09386127081</span> و <span class="text-indigo-700 mr-1">09117472462</span>
+              </span>
+            </div>
+          </div>
+          <span class="text-dark mb-3.5 mt-10 sm:text-center">اگر به این پروژه علاقمند شدید میتونید ما رو حمایت کنید و از طریق تلگرام برای سرمایه گذاری ارتباط بگیرید.</span>
+        </div>
+        <div class="col-span-12 lg:col-span-6 row-span-1 lg:row-span-2 grid grid-cols-4 grid-rows-2 sm:grid-rows-1 sm:flex-row justify-between mt-10 lg:mt-0">
+          <a href="" class="col-span-2 sm:col-span-1 row-span-1 flex flex-col justify-between px-5 py-3">
+            <img class="h-24 mx-auto" src="./src/assets/telegram.png" alt="">
+            <span href="" class="text-center font-bold text-blue-300 transition-all mt-5 duration-300 hover:text-blue-600">تلگرام</span>
+          </a>
+          <a href="" class="col-span-2 sm:col-span-1 row-span-1 flex flex-col justify-between px-5 py-3">
+            <img class="h-24 mx-auto" src="./src/assets/twitter.png" alt="">
+            <span href="" class="text-center font-bold text-blue-300 transition-all mt-5 duration-300 hover:text-blue-600">توییتر</span>
+          </a>
+          <a href="" class="col-span-2 sm:col-span-1 row-span-1 flex flex-col justify-between px-5 py-3">
+            <img class="h-24 mx-auto" src="./src/assets/instagram.png" alt="">
+            <span href="" class="text-center font-bold text-blue-300 transition-all mt-5 duration-300 hover:text-blue-600">اینستاگرام</span>
+          </a>
+          <a href="" class="col-span-2 sm:col-span-1 row-span-1 flex flex-col justify-between px-5 py-3">
+            <img class="h-24 mx-auto" src="./src/assets/youtube.png" alt="">
+            <span href="" class="text-center font-bold text-blue-300 transition-all mt-5 duration-300 hover:text-blue-600">یوتیوب</span>
+          </a>
+        </div>
+      </section>
+      <!-- end of contact us -->
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>میتاش | فرم ثبت اطلاعات</title>
+  <link href="../dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="input.css">
+  <script src="https://kit.fontawesome.com/6656344507.js" crossorigin="anonymous"></script>
+</head>
+<body class="overflow-hidden">
+  <div class="w-screen h-screen form-cont flex flex-col justify-center items-center">
+    <a href="../index.html" class="fixed right-0 top-0 flex bg-indigo-900 pt-3 sm:pt-5 pr-5 sm:pr-8 pb-6 sm:pb-10 pl-12 sm:pl-16 rounded-bl-full">
+      <i class="fa fa-arrow-right text-white text-2xl sm:text-4xl h-fit my-auto ml-3" aria-hidden="true"></i>
+      <h1 class="text-3xl sm:text-5xl text-white border-b-2 pb-2">میتاـــش</h1>
+    </a>
+    <div class="w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-1/2 h-fit pb-10 rounded-3xl bg-glass my-auto mx-auto pt-10 px-10 flex flex-col justify-between">
+      <h1 class="w-full text-white text-4xl text-center h-32 flex flex-col justify-center"><span>فرم ثبت اطلاعات</span></h1>
+      <div class="flex flex-col justify-evenly h-full">
+        <div>
+          <div class="flex flex-col sm:flex-row sm:my-4">
+            <div class="flex justify-between items-center px-5 bg-white rounded-2xl w-full sm:ml-2 my-2 sm:my-0">
+              <label class="h-full flex flex-col justify-center items-center pl-4 w-16" for="#name"><span>نام</span></label>
+              <div class="h-full w-px bg-gray-300"></div>
+              <input id="name" class="py-3 w-full focus:outline-0 pr-5" type="text" value="">
+            </div>
+            <div class="flex justify-between items-center px-5 bg-white rounded-2xl w-full sm:mr-2 my-2 sm:my-0">
+              <label class="h-full flex flex-col justify-center items-center pl-4 w-16" for="#email"><span>ایمیل</span></label>
+              <div class="h-full w-px bg-gray-300"></div>
+              <input id="email" class="py-3 w-full focus:outline-0 pr-5" type="text" value="">
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:my-4">
+            <div class="flex justify-between items-center px-5 bg-white rounded-2xl w-full sm:ml-2 my-2 sm:my-0">
+              <label class="h-full flex flex-col justify-center items-center pl-4 w-16" for="#phone"><span>شماره</span></label>
+              <div class="h-full w-px bg-gray-300"></div>
+              <input id="phone" class="py-3 w-full focus:outline-0 pr-5" type="text" value="">
+            </div>
+            <div class="flex justify-between items-center px-5 bg-white rounded-2xl w-full sm:mr-2 my-2 sm:my-0">
+              <label class="h-full flex flex-col justify-center items-center pl-4 w-16" for="#city"><span>شهر</span></label>
+              <div class="h-full w-px bg-gray-300"></div>
+              <input id="location" class="py-3 w-full focus:outline-0 pr-5" type="text" value="" >
+            </div>
+          </div>
+          <div class="flex justify-between items-center px-5 bg-white rounded-2xl my-2">
+            <label class="h-full flex flex-col justify-center items-center pl-4 w-16" for="#desc"><span>توضیحات</span></label>
+            <div class="h-full w-px bg-gray-300"></div>
+            <input id="description" class="py-3 whitespace-pre-line h-auto w-full focus:outline-0 pr-5" type="text" value="">
+          </div>
+        </div>
+        <button onclick="request()" class="px-8 py-4 mt-10 text-indigo-800 text-lg border-2 rounded-2xl w-fit mx-auto border-indigo-800 transition-all duration-300 hover:text-white hover:bg-indigo-800">ثبت اطلاعات</button>
+      </div>
+    </div>
+    <span id="response" class="absolute left-4 -top-12 transition-all duration-200 rounded-md px-4 py-2 bg-slate-50"></span>
+  </div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./index.js"></script>
+</html>
